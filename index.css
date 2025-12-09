@@ -1,0 +1,41 @@
+label1 {
+  color: red;
+  font-size: 2rem;
+  font-weight: 900;
+}
+form {
+  text-align: center;
+  line-height: 10;
+}
+p {
+  line-height: 20;
+  text-transform: uppercase;
+  margin: 10;
+}
+body {
+  background-color: black;
+}
+
+div {
+  background-size: auto;
+  margin: 2rem 4rem 5rem 6rem;
+  border: 15px;
+}
+
+#email {
+  size-adjust: 100000;
+}
+
+.btn {
+  background-color: rgba(10, 116, 151, 0.933);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 9px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgb(37, 90, 235, 0.3);
+  margin-bottom: 2rem;
+}
