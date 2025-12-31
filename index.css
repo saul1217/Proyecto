@@ -34,6 +34,7 @@ a{
 
 aside{
   padding:2rem;
+  padding-right: 0;
   color: var(--clr-white);
   position: sticky;
   top:0;
@@ -46,6 +47,28 @@ aside{
 .logo{
   font-weight: 400;
   font-size: 1.3rem;
+}
+
+.boton-menu{
+  background-color: transparent;
+  border: 0;
+  color: var(--clr-white);
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  font-size: .85rem;
+  text-align: le;
+  
+}
+
+.boton-menu.active{
+  background-color: var(--clr-white);
+  color: var(--clr-main);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  width: 100%;
 }
 .menu {
     display: flex;
@@ -74,7 +97,7 @@ main{
 
 .contenedor-productos{
   display: grid;
-  margin-left: -40px;
+  
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
