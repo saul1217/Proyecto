@@ -3,5 +3,12 @@
 }
 
 .principal{
-    
+    display: grid;
+    grid-template-rows: 1fr 4fr 5rem;
+}
+
+.primera-barra  {
+    display: grid;
+    grid-template-rows: 25% 75%;
+    font-size: 25px;
 }
