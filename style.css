@@ -162,6 +162,10 @@ ul{
     background: linear-gradient(90deg, #0f1626 0%, #2a3b55 100%);
     position: relative;
     overflow: hidden;
+    animation: banner 10s infinite; 
+    background-size: cover; 
+    background-position: center;
+
 }
 
 .banner-content{
@@ -300,8 +304,6 @@ ul{
     color: #666;
     line-height: 1.3;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
@@ -311,4 +313,16 @@ footer{
     background-color: var(--clr-blue);
 }
 
-
+@keyframes banner{
+0%, 20% {
+        background-image: url('img/download.jpg');
+    }
+    25%, 45% {
+        background-image: url('img/download\ \(1\).jpg');
+    }
+    50%, 70% {
+        background-image: url('certificadoprank.png');
+    }
+    75%, 100% {
+        background-image: url('certificadoprank.png');
+    }}
