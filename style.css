@@ -33,6 +33,16 @@ a{
     color: inherit;
 }
 
+button{
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--clr-main);
+    border: none;
+}
+button:hover{
+    color: #333;
+    cursor: pointer;
+}
 ul{
     list-style: none;
 }
@@ -50,7 +60,6 @@ ul{
     padding: 0 10px;
 }
 
-/* Superior de la barra */
 .barra-top{
     display: flex;
 
@@ -103,7 +112,7 @@ ul{
 
 }
 
-/* abajo barra */
+
 .barra-bottom{
     display: flex;
     align-items: flex-end;
@@ -158,12 +167,12 @@ ul{
 
 .hero{
     width: 100%;
-    height: 380px;
+    height: 32rem;
     background: linear-gradient(90deg, #0f1626 0%, #2a3b55 100%);
     position: relative;
     overflow: hidden;
     animation: banner 10s infinite; 
-    background-size: cover; 
+    background-size: 100% 100%; 
     background-position: center;
 
 }
@@ -247,6 +256,7 @@ ul{
     transition: box-shadow 0.2s;
     cursor: pointer;
     overflow: hidden;
+    border-color: #000000;
 }
 
 .producto:hover{
@@ -256,7 +266,7 @@ ul{
 .card-image{
     width:100% ;
     height: 220px;
-    background-color: #f5f5f5;
+    background-color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,11 +277,13 @@ ul{
 .card-image img{
     font-size: 50px;
     color: #ccc;
+
 }
 
 .card-content{
     padding: 20px;
     background-color: white;
+    
 }
 
 .price-row{
@@ -312,13 +324,46 @@ footer{
     font-size: 24px;
     background-color: var(--clr-blue);
 }
+#popup{
+    display: flex;
+    
+    align-items: flex-start;
+    gap: 5rem;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: white;
+    background-color: var(--clr-main);
+    animation: caida 1s ease-out forwards ;
+}
+
+.popup-text{
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown;
+}
+
+
+@keyframes caida {
+  0% {
+    transform: translateY(-100vh); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+}
 
 @keyframes banner{
 0%, 20% {
-        background-image: url('img/download.jpg');
+        background-image: url('img/celular.png');
     }
     25%, 45% {
-        background-image: url('img/download\ \(1\).jpg');
+        background-image: url('img/cel2.png');
+        background-color: black;
     }
     50%, 70% {
         background-image: url('certificadoprank.png');
