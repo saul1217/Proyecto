@@ -28,24 +28,30 @@
           </div>
         </div>
 
-        <div class="barra-bottom">
+        <div class="barra-bottom aa">
           <div class="nav-address">
             <i class="fas fa-map-marker-alt"></i>
             <div class="addres-text">
-              <span>ingresa tu</span>
-              <strong>direccion</strong>
+              <span>enviar a </span>
+              <strong
+                ><input
+                  type="text"
+                  placeholder="31654"
+                  class="direccion"
+                  maxlength="6"
+              /></strong>
             </div>
           </div>
 
           <nav class="links">
             <ul>
-              <li><a href="#ofertas-link">Suscribete</a></li>
+              <li><a href="#mantenimiento.html">Suscribete</a></li>
               <li><a href="#ofertas-link">Ofertas</a></li>
-              <li><a href="#">Historial</a></li>
-              <li><a href="#">Supermercado</a></li>
-              <li><a href="#">Moda</a></li>
-              <li><a href="#">vender</a></li>
-              <li><a href="#">Ayuda</a></li>
+              <li><a href="mantenimiento.html">Historial</a></li>
+              <li><a href="mantenimiento.html">Supermercado</a></li>
+              <li><a href="mantenimiento.html">Moda</a></li>
+              <li><a href="mantenimiento.html">vender</a></li>
+              <li><a href="mantenimiento.html">Ayuda</a></li>
             </ul>
           </nav>
 
@@ -82,7 +88,7 @@
                   <br />
                   <p>contraseña</p>
                   <input
-                    type="text"
+                    type="password"
                     name=""
                     placeholder="Ingresa tu contraseña"
                     id=""
@@ -91,21 +97,30 @@
                   <br />
                   <p>confirmar Contraseña</p>
                   <input
-                    type="text"
+                    type="password"
                     name=""
                     placeholder="Ingresa tu contraseña "
                     id=""
                     class="popup-text"
                   />
                   <br />
+                  <br />
                   <div class="boton-crearcuenta">
                     <button
                       popovertarget="popup-crear"
                       popovertargetaction="hide"
+                      type="button"
                     >
                       cancelar
                     </button>
-                    <button>confirmar</button>
+                    <button
+                      type="button"
+                      popovertarget="popup-crear"
+                      popovertargetaction="hide"
+                      type="button"
+                    >
+                      confirmar
+                    </button>
                   </div>
                 </form>
               </div>
@@ -113,7 +128,7 @@
               <button popovertarget="popup-Ingresar">Ingresar</button>
               <div popover id="popup-Ingresar" class="popups">
                 <form class="popup-form">
-                  <p>Usuario</p>
+                  <p>Usuario <i class="fa-solid fa-user"></i></p>
                   <input
                     type="text"
                     name=""
@@ -122,24 +137,33 @@
                     class="popup-text"
                   />
                   <br />
-                  <p>Contraseña</p>
+                  <br />
+                  <p>Contraseña <i class="fa-solid fa-key"></i></p>
                   <input
-                    type="text"
+                    type="password"
                     name=""
                     placeholder="Ingresa tu contraseña"
                     id=""
                     class="popup-text"
                   />
                   <br />
-                  <p>Usuarissso</p>
-                  <input
-                    type="text"
-                    name=""
-                    placeholder="Ingresa tu usuario"
-                    id=""
-                    class="popup-text"
-                  />
                   <br />
+                  <div class="boton-ingresar">
+                    <button
+                      popovertarget="popup-Ingresar"
+                      popovertargetaction="hide"
+                      type="button"
+                    >
+                      cancelar
+                    </button>
+                    <button
+                      popovertarget="popup-Ingresar"
+                      popovertargetaction="hide"
+                      type="button"
+                    >
+                      confirmar
+                    </button>
+                  </div>
                 </form>
               </div>
               <li><a href="#">Mis compras</a></li>
@@ -394,7 +418,7 @@
     </main>
 
     <footer>
-      <marquee behavior="alternate" direction="right" scrollamount="20">
+      <marquee behavior="alternate" direction="right" scrollamount="20000">
         <p>Copyright &copy; 2025-2026 Todos los derechos reservados a saul</p>
       </marquee>
     </footer>

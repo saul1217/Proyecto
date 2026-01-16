@@ -1,7 +1,7 @@
 :root{
     --clr-main:#fff159;
     --clr-blue: #3483fa;
-    --clr-gray: #ebebeb;
+    --clr-gray: #33242400;
     --text-color: #333;
     --text-gray: #666;
            
@@ -25,7 +25,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Proxima Nova', --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: var(gra);
+    background-color:var(--clr-gray);
 }
 
 a{
@@ -55,16 +55,15 @@ ul{
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 95rem;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 0;
 }
 
 .barra-top{
     display: flex;
-
     align-items: center;
-    gap: 25px;
+    gap:25px;
     margin-bottom: 12px;
 }
 
@@ -124,7 +123,7 @@ ul{
     align-items: center;
     gap: 5px;
     width: 140px;
-    cursor: pointer;
+   
 }
 
 .nav-address i {
@@ -229,6 +228,7 @@ ul{
 }
 
 .ofertas{
+    
     margin-top: 40px;
     padding-bottom: 40px;
 }
@@ -326,7 +326,7 @@ footer{
 }
 
 .popups{
-      display: flex;
+    
     align-items: flex-start;
     gap: 5rem;
     margin: auto;
@@ -339,10 +339,19 @@ footer{
 }
 
 .popups:popover-open{
+    display: flex;
     animation: caida 1s ease-out forwards;
 }
+
+.popups::backdrop{
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(2px);
+    transition: opacity 0.5 ease;
+}
+
+
 #popup-Ingresar{
-     display: flex;
+ 
     align-items: flex-start;
     gap: 5rem;
     margin: auto;
@@ -353,19 +362,52 @@ footer{
     background: white;
     background-color: var(--clr-main);
 }
-
+#popup-Ingresar:popover-open {
+  display: flex;
+}
 .popup-text{
     width: 100%;
     height: 100%;
-  ;
+  
 }
 
 .boton-crearcuenta{
     display: inline-flex;
     justify-content: space-between;
     gap: 400px;
-    border-radius: 10px;
-    right: auto;;
+    
+}
+
+.boton-crearcuenta button:hover{
+    border: 2px solid black; 
+    border-radius: 20px;    
+    padding:  2px 2px;    
+    background-color: var(--clr-main); 
+    cursor: pointer;         
+    font-weight: bold;
+}
+
+.boton-ingresar{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.boton-ingresar button:hover{
+    border: 2px solid black; 
+    border-radius: 20px;     
+    padding:  2px 2px;      
+    background-color: var(--clr-main);
+    cursor: pointer;         
+    font-weight: bold;
+}
+
+.direccion{
+    background-color: #ffffffe0;
+    border-radius: none;
+    border:  none;
+    width: 5rem;
+    max-width: 5rem;
+    
 }
 
 
