@@ -436,3 +436,12 @@ footer{
     75%, 100% {
         background-image: url('certificadoprank.png');
     }}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px; 
+    }
+    .container {
+        width: 90%; 
+    }
+}
