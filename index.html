@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -16,13 +16,20 @@
         <div class="barra-top">
           <a href="#" class="logo">MercadoSaul</a>
           <form class="buscador">
-            <input type="text" placeholder="Buscar productos" />
-            <button type="submit"><i class="fas fa-search"></i></button>
+            <input
+              type="text"
+              placeholder="Buscar productos"
+              aria-label="buscar productos buscador"
+            />
+            <button type="submit">
+              <i class="fas fa-search" aria-label="buscar productos boton"></i>
+            </button>
           </form>
           <div class="promo">
             <i class="fa-regular fa-chess-king"></i>
             <a
               href="https://www.3tres3.com/3tres3_common/art/3tres3/52620/home.jpg?w=650&h=366&ho=1&t=1761052923"
+              aria-label=" ir hacia la promocion"
               >6 meses de pornhub premium</a
             >
           </div>
@@ -39,25 +46,52 @@
                   placeholder="31654"
                   class="direccion"
                   maxlength="6"
+                  aria-label="editar la direccion de envio"
               /></strong>
             </div>
           </div>
 
           <nav class="links">
             <ul>
-              <li><a href="#mantenimiento.html">Suscribete</a></li>
-              <li><a href="#ofertas-link">Ofertas</a></li>
-              <li><a href="mantenimiento.html">Historial</a></li>
-              <li><a href="mantenimiento.html">Supermercado</a></li>
-              <li><a href="mantenimiento.html">Moda</a></li>
-              <li><a href="mantenimiento.html">vender</a></li>
-              <li><a href="mantenimiento.html">Ayuda</a></li>
+              <li>
+                <a href="#mantenimiento.html" aria-label="ir a suscribirse"
+                  >Suscribete</a
+                >
+              </li>
+              <li>
+                <a href="#ofertas-link" aria-label="ir a las ofertas"
+                  >Ofertas</a
+                >
+              </li>
+              <li>
+                <a href="mantenimiento.html" aria-label="ir al historial"
+                  >Historial</a
+                >
+              </li>
+              <li>
+                <a href="mantenimiento.html" aria-label="ir al supermercado"
+                  >Supermercado</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mantenimiento.html"
+                  aria-label="ir al departamento de moda"
+                  >Moda</a
+                >
+              </li>
+              <li>
+                <a href="mantenimiento.html" aria-label="ir a ventas">vender</a>
+              </li>
+              <li><a href="mantenimiento.html" aria-label="ayuda">Ayuda</a></li>
             </ul>
           </nav>
 
           <nav class="user-menu">
             <ul>
-              <button popovertarget="popup-crear">Crea tu cuenta</button>
+              <button popovertarget="popup-crear" aria-label="crear cuenta">
+                Crea tu cuenta
+              </button>
               <div popover id="popup-crear" class="popups">
                 <form class="popup-form">
                   <p>Nombre</p>
@@ -67,6 +101,7 @@
                     placeholder="Ingresa tu nombre"
                     id=""
                     class="popup-text"
+                    aria-label="ingresa tu nombre"
                   />
                   <br />
                   <p>Apellido</p>
@@ -76,6 +111,7 @@
                     placeholder="Ingresa tu apellido"
                     id=""
                     class="popup-text"
+                    aria-label="ingresa tu apellido"
                   />
                   <p>Nombre de usuario</p>
                   <input
@@ -84,6 +120,7 @@
                     placeholder="nombre de usuario"
                     id=""
                     class="popup-text"
+                    aria-label="ingresa tu nombre de usuario"
                   />
                   <br />
                   <p>contraseña</p>
@@ -93,6 +130,7 @@
                     placeholder="Ingresa tu contraseña"
                     id=""
                     class="popup-text"
+                    aria-label="ingresa tu contraseña"
                   />
                   <br />
                   <p>confirmar Contraseña</p>
@@ -102,6 +140,7 @@
                     placeholder="Ingresa tu contraseña "
                     id=""
                     class="popup-text"
+                    aria-label="confirma tu contraseña"
                   />
                   <br />
                   <br />
@@ -110,6 +149,7 @@
                       popovertarget="popup-crear"
                       popovertargetaction="hide"
                       type="button"
+                      aria-label="cancelar"
                     >
                       cancelar
                     </button>
@@ -118,6 +158,7 @@
                       popovertarget="popup-crear"
                       popovertargetaction="hide"
                       type="button"
+                      aria-label="confirmar"
                     >
                       confirmar
                     </button>
@@ -125,7 +166,9 @@
                 </form>
               </div>
 
-              <button popovertarget="popup-Ingresar">Ingresar</button>
+              <button popovertarget="popup-Ingresar" aria-label="ingresar">
+                Ingresar
+              </button>
               <div popover id="popup-Ingresar" class="popups">
                 <form class="popup-form">
                   <p>Usuario <i class="fa-solid fa-user"></i></p>
@@ -413,14 +456,61 @@
               </div>
             </a>
           </article>
+          <article class="producto">
+            <a
+              href="https://www.mercadolibre.com.mx/monster-energy-zero-ultra-paquete-de-24-unidades/p/MLM50940929"
+            >
+              <div class="card-image">
+                <img
+                  src="https://http2.mlstatic.com/D_NQ_NP_908979-MLA99776756065_112025-O.webp"
+                />
+              </div>
+              <div class="card-content">
+                <div class="price-row">
+                  <span class="price">200$</span>
+                  <span class="descuento">20%</span>
+                </div>
+                <div class="compra-info">
+                  Envio gratis
+                  <i class="fas fa-bolt" style="font-size: 12px"></i>
+                </div>
+                <p class="product-title">
+                  Monster Energy Zero Ultra Paquete De 24 Unidades |
+                  MercadoLibre
+                </p>
+              </div>
+            </a>
+          </article>
+          <article class="producto">
+            <a
+              href="https://www.mercadolibre.com.mx/moto-edge-60-neo-12256-grisaille/p/MLM61500237"
+            >
+              <div class="card-image">
+                <img
+                  src="https://http2.mlstatic.com/D_NQ_NP_622758-MLA96399318404_102025-O.webp"
+                />
+              </div>
+              <div class="card-content">
+                <div class="price-row">
+                  <span class="price">3500$</span>
+                  <span class="descuento">20%</span>
+                </div>
+                <div class="compra-info">
+                  Envio gratis
+                  <i class="fas fa-bolt" style="font-size: 12px"></i>
+                </div>
+                <p class="product-title">
+                  Motorola Moto Edge 60 Neo 12+256 Frosbite
+                </p>
+              </div>
+            </a>
+          </article>
         </div>
       </section>
     </main>
 
     <footer>
-      <marquee behavior="alternate" direction="right" scrollamount="20000">
-        <p>Copyright &copy; 2025-2026 Todos los derechos reservados a saul</p>
-      </marquee>
+      <p>Copyright &copy; 2025-2026 Todos los derechos reservados a saul</p>
     </footer>
   </body>
 </html>

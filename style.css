@@ -320,9 +320,11 @@ ul{
 }
 
 footer{
-
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
     font-size: 24px;
-    background-color: var(--clr-blue);
+    background-color: rgba(210, 209, 209, 0.541);
 }
 
 .popups{
