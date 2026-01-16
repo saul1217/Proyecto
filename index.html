@@ -51,8 +51,67 @@
 
           <nav class="user-menu">
             <ul>
-              <button popovertarget="popup">Crea tu cuenta</button>
-              <div popover id="popup">
+              <button popovertarget="popup-crear">Crea tu cuenta</button>
+              <div popover id="popup-crear" class="popups">
+                <form class="popup-form">
+                  <p>Nombre</p>
+                  <input
+                    type="text"
+                    name=""
+                    placeholder="Ingresa tu nombre"
+                    id=""
+                    class="popup-text"
+                  />
+                  <br />
+                  <p>Apellido</p>
+                  <input
+                    type="text"
+                    name=""
+                    placeholder="Ingresa tu apellido"
+                    id=""
+                    class="popup-text"
+                  />
+                  <p>Nombre de usuario</p>
+                  <input
+                    type="text"
+                    name=""
+                    placeholder="nombre de usuario"
+                    id=""
+                    class="popup-text"
+                  />
+                  <br />
+                  <p>contraseña</p>
+                  <input
+                    type="text"
+                    name=""
+                    placeholder="Ingresa tu contraseña"
+                    id=""
+                    class="popup-text"
+                  />
+                  <br />
+                  <p>confirmar Contraseña</p>
+                  <input
+                    type="text"
+                    name=""
+                    placeholder="Ingresa tu contraseña "
+                    id=""
+                    class="popup-text"
+                  />
+                  <br />
+                  <div class="boton-crearcuenta">
+                    <button
+                      popovertarget="popup-crear"
+                      popovertargetaction="hide"
+                    >
+                      cancelar
+                    </button>
+                    <button>confirmar</button>
+                  </div>
+                </form>
+              </div>
+
+              <button popovertarget="popup-Ingresar">Ingresar</button>
+              <div popover id="popup-Ingresar" class="popups">
                 <form class="popup-form">
                   <p>Usuario</p>
                   <input
@@ -71,9 +130,18 @@
                     id=""
                     class="popup-text"
                   />
+                  <br />
+                  <p>Usuarissso</p>
+                  <input
+                    type="text"
+                    name=""
+                    placeholder="Ingresa tu usuario"
+                    id=""
+                    class="popup-text"
+                  />
+                  <br />
                 </form>
               </div>
-              <li><a href="#">Ingresa</a></li>
               <li><a href="#">Mis compras</a></li>
               <li>
                 <a href="#"><i class="fas fa-shopping-cart"></i></a>
