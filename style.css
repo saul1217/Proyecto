@@ -6,7 +6,12 @@
     --text-gray: #666;
            
 }
-
+@media (max-width:900px) {
+    *{
+        width: 100%;
+        
+    }
+}
 
  * {
     margin: 0;
@@ -437,9 +442,3 @@ footer{
         background-image: url('certificadoprank.png');
     }}
 
-@media (max-width:900px) {
-    *{
-        width: 100%;
-        
-    }
-}
